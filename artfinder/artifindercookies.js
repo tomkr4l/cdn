@@ -34,10 +34,10 @@ window.uetq.push('consent', 'default', {
 
     var link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'https://gist.githubusercontent.com/tomkr4l/56a9a952c21fe87b8ade78dfeb7feeaf/raw/0d8bb512b05f108d0ebc9901b57e3ebcfa70d651/cookieconsent.css';
+    link.href = 'https://github.com/tomkr4l/cdn/blob/main/artfinder/cookieconsent.css';
     var script = document.createElement('script');
     script.defer = true;
-    script.src = 'https://gist.githubusercontent.com/tomkr4l/56a9a952c21fe87b8ade78dfeb7feeaf/raw/0d8bb512b05f108d0ebc9901b57e3ebcfa70d651/cookieconsent.js';
+    script.src = 'https://cdn.jsdelivr.net/gh/tomkr4l/cdn/artfinder/cookieconsent.js';
     script.onload = function () {
         loadCookieConsent()
     };
@@ -54,7 +54,7 @@ function consentGtagUpdate(cookieconsent) {
     ad_user_data:        cookieconsent.allowedCategory('ad_user')           ? 'granted' : 'denied',
     ad_personalization:  cookieconsent.allowedCategory('ad_personalization')? 'granted' : 'denied',
   };
-	
+
 gtag('consent', 'update', consent);          // 1) zásadní příkaz pro Google
 dataLayer.push({ event: 'gtm.consentUpdate'}); // 2) událost pro trigger v GTM
 
@@ -169,7 +169,7 @@ dataLayer.push({ event: 'gtm.consentUpdate'}); // 2) událost pro trigger v GTM
                                     value: 'ad_personalization',
                                     enabled: false,
                                     readonly: false
-                                }, 
+                                },
                             },
                         ]
                     }
@@ -240,7 +240,7 @@ dataLayer.push({ event: 'gtm.consentUpdate'}); // 2) událost pro trigger v GTM
                                     value: 'ad_personalization',
                                     enabled: false,
                                     readonly: false
-                                }, 
+                                },
                             },
                         ]
                     }
@@ -311,7 +311,7 @@ dataLayer.push({ event: 'gtm.consentUpdate'}); // 2) událost pro trigger v GTM
                                     value: 'ad_personalization',
                                     enabled: false,
                                     readonly: false
-                                }, 
+                                },
                             },
                         ]
                     }
