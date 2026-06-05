@@ -34,7 +34,7 @@ window.uetq.push('consent', 'default', {
 
     var link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = 'https://raw.githubusercontent.com/tomkr4l/cdn/refs/heads/main/artfinder/cookieconsent.css';
+    link.href = 'https://cdn.jsdelivr.net/gh/tomkr4l/cdn/artfinder/cookieconsent.css';
     var script = document.createElement('script');
     script.defer = true;
     script.src = 'https://cdn.jsdelivr.net/gh/tomkr4l/cdn/artfinder/cookieconsent.js';
